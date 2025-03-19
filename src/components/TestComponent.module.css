@@ -1,0 +1,66 @@
+.testComponent {
+  padding: 2rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background-color: #f8fafc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.counters {
+  margin-bottom: 1.5rem;
+}
+
+.counterItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.label {
+  color: #64748b;
+}
+
+.value {
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.incrementBtn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.incrementBtn:hover {
+  background-color: #2563eb;
+}
+
+.regularComponent {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+@media (max-width: 480px) {
+  .testComponent {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+}
