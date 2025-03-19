@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import TestComponent from './components/TestComponent'
+
+const handleCountChange = (newCount: number) => {
+  console.log(`New count received from child: ${newCount}`)
+}
 </script>
 
 <template>
@@ -9,6 +14,10 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+      <TestComponent 
+        :initialCount="10"
+        @countChanged="handleCountChange"
+      />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
